@@ -48,7 +48,7 @@ Problem: ECE BOARD EXAM PROBLEM
 1. Load dataset and compute Average
    
 		ECE BOARD EXAM PROBLEM                                                                                   # Markdown heading for the problem
-		[]: df = pd.read_csv("board.csv")                                                                        # Read the CSV file (board.csv) into a DataFrame
+		[]: df = pd.read_csv("board.csv")                                                                        # Read the CSV file (board.csv) into a DataFrame (make sure board.csv is in the same folder as this notebook)
 	 	[]: df["Average"] = df[["Math", "Electronics", "GEAS", "Communication"]].mean(axis=1)                    # Create a new column "Average" which is the mean of Math, Electronics, GEAS, and Communication per student
 		[]: print("=== NEW ROW OUTPUT: First 5 rows of dataset after preprocessing ===")display(df.head())       # Show the first 5 rows of the dataset after preprocessing
 
