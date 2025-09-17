@@ -58,21 +58,26 @@ Problem: ECE BOARD EXAM PROBLEM
 		# Condition: Students with Math < 70
 		# Columns: student name and Math
  
-	 	[]: Vis = df[df["Math"] < 70][["student name", "Math"]] 
-  
+	 	[]: Vis = df[df["Math"] < 70][["student name", "Math"]]
+   			print("\n=== NEW ROW OUTPUT: Vis DataFrame ===")
+   			display(Vis)
+  	
 		# --- Instru DataFrame ---
 		# Condition: Students with Electronics > 70
 		# Columns: student name, GEAS, Electronics
  
-  		[]: Instru = df[df["Electronics"] > 70][["student name", "GEAS", "Electronics"]] 
+  		[]: Instru = df[df["Electronics"] > 70][["student name", "GEAS", "Electronics"]]
+   			print("\n=== NEW ROW OUTPUT: Instru DataFrame ===")
+			display(Instru)
    
 		# --- Mindy DataFrame ---
 		# Condition: Students with Average >= 55
 		# Columns: student name, Electronics, Average  
  
    		[]: Mindy = df[df["Average"] >= 55][["student name", "Electronics", "Average"]]
-   
-3. Visualization 
+   			print("\n=== NEW ROW OUTPUT: Mindy DataFrame ===")
+   			display(Mindy)
+4. Visualization 
 
 		# Create a barplot showing how each subject contributes to the Average
 		[]: print("\n=== NEW ROW OUTPUT: Barplot - Contribution of Subjects to Average ===")
@@ -97,7 +102,7 @@ Types of outputs you may see:
 
 	1. Normal Output (table) → when a DataFrame is printed.
  	2. Graphical Output (plot) → when a barplot or chart is displayed.
-  	3.Error Message → a red message shown when the code has a mistake or a variable is undefined.
+  	3. Error Message → a red message shown when the code has a mistake or a variable is undefined.
 
 
 --- OUTPUT ---
